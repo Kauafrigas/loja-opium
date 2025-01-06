@@ -1,0 +1,39 @@
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.produto {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.produto h3 {
+    margin-bottom: 10px;
+    color: #4A148C;
+}
+
+.produto p {
+    margin-bottom: 15px;
+}
+
+.produto button {
+    background-color: #4A148C;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background-color: #7B1FA2;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Opium Store - Categoria</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1 th:text="'Categoria: ' + ${categoria.nome}"></h1>
+    <div class="produtos">
+        <div th:each="produto : ${categoria.produtos}">
+            <div class="produto">
+                <img th:src="${produto.imagem}" alt="Produto">
+                <h3 th:text="${produto.nome}"></h3>
+                <p th:text="${produto.descricao}"></p>
+                <p th:text="'R$ ' + ${produto.preco}"></p>
+            </div>
+        </div>
+    </div>
+    <a href="/">Voltar</a>
+</body>
+</html>

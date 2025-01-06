@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home - Opium Store</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Opium Store</h1>
+        <nav>
+           
+            <a th:href="@{/carrinho}">Carrinho</a>
+            <a th:href="@{/login}">Sair</a>
+        </nav>
+    </header>
+    <section>
+        <div class="produtos">
+            <div class="produto">
+                <h3>Camisa Preta</h3>
+                <p>Preço: R$ 50,00</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <h3>Calça Jeans</h3>
+                <p>Preço: R$ 120,00</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <h3>Tênis Esportivo</h3>
+                <p>Preço: R$ 200,00</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <h3>Jaqueta de Couro</h3>
+                <p>Preço: R$ 300,00</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
